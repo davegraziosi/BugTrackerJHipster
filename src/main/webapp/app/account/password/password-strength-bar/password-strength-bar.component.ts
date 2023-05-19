@@ -12,7 +12,7 @@ export class PasswordStrengthBarComponent {
 
   measureStrength(p: string): number {
     let force = 0;
-    const regex = /[$-/:-?{-~!"^_`[\]]/g; // "
+    const regex = /[$-\/:-?{-~!"^_`[\]]/g; // "
     const lowerLetters = /[a-z]+/.test(p);
     const upperLetters = /[A-Z]+/.test(p);
     const numbers = /\d+/.test(p);
